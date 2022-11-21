@@ -3,8 +3,12 @@ import greedy
 import offline
 import terminals
 import gen
+import sys
 
-terminals.terminals()
+if len(sys.argv)==1:
+	terminals.terminals()
+elif sys.argv[1]==0:
+	terminals.terminals()
 
 ters = gen.rter()
 rr = ters[0]
